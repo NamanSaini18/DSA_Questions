@@ -21,7 +21,7 @@ public class RandomQuickSort
     }
 
     public static int partition(int[] arr, int si, int ei) {
-        // TODO Auto-generated method stub
+
         int item = arr[ei];
         int pi = si;
         for (int i = si; i < ei; i++) {

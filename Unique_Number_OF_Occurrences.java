@@ -24,20 +24,20 @@ Constraints:
 -1000 <= arr[i] <= 1000
 */
 
-class Solution {
-    public boolean uniqueOccurrences(int[] arr) {
-        int n = arr.length-1;
-        Map<Integer,Integer> map = new HashMap<>();
-        for(int i : arr)
-        {
-            map.put(i,map.getOrDefault(i,0)+1);
-        }
-        Set<Integer> set = new HashSet<>();
-        for(int i : map.values())
-        {
-            if(set.contains(i)) return false;
-            set.add(i);
-        }
-        return true;
-    }
-}
+//class Solution {
+//    public boolean uniqueOccurrences(int[] arr) {
+//        int n = arr.length-1;
+//        Map<Integer,Integer> map = new HashMap<>();
+//        for(int i : arr)
+//        {
+//            map.put(i,map.getOrDefault(i,0)+1);
+//        }
+//        Set<Integer> set = new HashSet<>();
+//        for(int i : map.values())
+//        {
+//            if(set.contains(i)) return false;
+//            set.add(i);
+//        }
+//        return true;
+//    }
+//}

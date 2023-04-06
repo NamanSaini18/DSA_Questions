@@ -1,3 +1,5 @@
+import java.util.*;
+
 /*
 1129. Shortest Path with Alternating Colors
 Medium
@@ -31,10 +33,10 @@ Constraints:
 redEdges[i].length == blueEdges[j].length == 2
 0 <= ai, bi, uj, vj < n
 */
-class Solution
+class Solution4
 {
-    public int[] shortestAlternatingPaths(int n, int[][] red_edges, int[][] blue_edges) 
-{
+    public int[] shortestAlternatingPaths(int n, int[][] red_edges, int[][] blue_edges)
+    {
         List<Integer>[] Red = new ArrayList[n], Blue = new ArrayList[n];
 
         for(int[] item : red_edges)
@@ -43,7 +45,7 @@ class Solution
             {
                 Red[item[0]] = new ArrayList<>();
             }
-                
+
             Red[item[0]].add(item[1]);
         }
         for(int[] item : blue_edges)
@@ -52,7 +54,7 @@ class Solution
             {
                 Blue[item[0]] = new ArrayList<>();
             }
-               
+
             Blue[item[0]].add(item[1]);
         }
 
@@ -64,7 +66,7 @@ class Solution
 
         queue.add(new int[]{0, 0});
         int ctr = 0;
-        
+
         Set<String> set = new HashSet<>();
 
         while(!queue.isEmpty())
@@ -75,7 +77,7 @@ class Solution
                 int[] arr = queue.remove();
                 String str = arr[0]+" "+arr[1];
 
-                if(set.contains(str)) 
+                if(set.contains(str))
                 {
                     continue;
                 }
@@ -86,7 +88,7 @@ class Solution
                 {
                     res[arr[0]] = ctr;
                 }
-                    
+
                 if(arr[1] == 2 || arr[1] == 0)
                 {
                     if(Red[arr[0]] != null)
@@ -95,11 +97,11 @@ class Solution
                         {
                             queue.add(new int[]{child, 1});
                         }
-                            
+
                     }
                 }
 
-                        
+
                 if(arr[1] == 1 || arr[1] == 0)
                 {
                     if(Blue[arr[0]] != null)
@@ -108,9 +110,9 @@ class Solution
                         {
                             queue.add(new int[]{child, 2});
                         }
-                            
+
                     }
-                } 
+                }
             }
             ++ctr;
         }

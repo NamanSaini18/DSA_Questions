@@ -28,12 +28,13 @@ public class N_Queen_Problem {
     }
 
     public static boolean issafe(boolean[][] board, int row, int col) {
-        // TODO Auto-generated method stub
+        
 
         int r = row;
         // vertical
         while (r >= 0) {
-            if (board[r][col] == true) {
+            if (board[r][col] == true)
+            {
                 return false;
             }
             r--;

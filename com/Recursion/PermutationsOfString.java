@@ -42,7 +42,7 @@ public class PermutationsOfString {
                     break;
                 }
             }
-            if(flag == false)
+            if(!flag)
             {
                 PermutationWithDuplicates(str.substring(0,i)+str.substring(i+1),ans+str.charAt(i));
             }

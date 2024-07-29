@@ -26,7 +26,7 @@ public class AggressiveCows {
         while(lo<=hi)
         {
             int mid = (lo+hi)/2;
-            if(IsItPossible(stalls,mid,c)==true)
+            if(IsItPossible(stalls, mid, c))
             {
                 ans=mid;
                 lo=mid+1;

@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Prims
 {
-    private HashMap<Integer, HashMap<Integer,Integer>> map = new HashMap<>();
+    private final HashMap<Integer, HashMap<Integer,Integer>> map = new HashMap<>();
 
 
     public Prims(int v)

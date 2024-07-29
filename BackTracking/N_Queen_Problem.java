@@ -17,7 +17,7 @@ public class N_Queen_Problem {
             return;
         }
         for (int col = 0; col < board.length; col++) {
-            if (issafe(board, row, col) == true) {
+            if (issafe(board, row, col)) {
                 board[row][col] = true;
                 N_Queen(board, tq - 1, row + 1);
                 board[row][col] = false;
@@ -33,7 +33,7 @@ public class N_Queen_Problem {
         int r = row;
         // vertical
         while (r >= 0) {
-            if (board[r][col] == true)
+            if (board[r][col])
             {
                 return false;
             }
@@ -44,7 +44,7 @@ public class N_Queen_Problem {
         r = row;
         int c = col;
         while (r >= 0 && c >= 0) {
-            if (board[r][c] == true) {
+            if (board[r][c]) {
                 return false;
             }
             c--;
@@ -54,7 +54,7 @@ public class N_Queen_Problem {
         r = row;
         c = col;
         while (r >= 0 && c < board.length) {
-            if (board[r][c] == true) {
+            if (board[r][c]) {
                 return false;
             }
             c++;

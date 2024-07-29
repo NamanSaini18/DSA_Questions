@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class DecimaltoOctal {
-        public static void main(String args[]) {
+        public static void main(String[] args) {
             // Your Code Here
 
             Scanner sc = new Scanner(System.in);

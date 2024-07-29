@@ -10,10 +10,7 @@ public class Burst_Balloons
         int[] dp = new int[nums.length+2];
 
         dp[0] = dp[dp.length-1] = 1;
-        for(int i=1;i<dp.length-1;i++)
-        {
-            dp[i]= nums[i-1];
-        }
+        System.arraycopy(nums, 0, dp, 1, dp.length - 1 - 1);
 
         System.out.println(Burst(dp,0,dp.length-1));
         System.out.println(Burst_DP(dp,0,dp.length-1));

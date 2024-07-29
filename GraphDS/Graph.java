@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.function.IntBinaryOperator;
 
 public class Graph {
-    private HashMap<Integer, HashMap<Integer, Integer>> map = new HashMap<>();
+    private final HashMap<Integer, HashMap<Integer, Integer>> map = new HashMap<>();
 
     public Graph(int v) {
         for (int i = 1; i <= v; i++) {

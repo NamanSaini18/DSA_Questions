@@ -24,7 +24,7 @@ public class Basic {
         }
         for(int i=0;i<board.length;i++)
         {
-            if(board[i] == false)
+            if(!board[i])
             {
                 board[i] = true;
                 PrintPermutations(board,tq,qpsf+1,res+"b"+i+"q"+qpsf);  // Implicitly BackTracking
@@ -44,7 +44,7 @@ public class Basic {
         }
         for(int i = idx;i<board.length;i++)
         {
-            if(board[i] == false)
+            if(!board[i])
             {
                 board[i] = true;
                 PrintCombinations(board,tq,qpsf+1,res+"b"+i+"q"+qpsf,i+1);

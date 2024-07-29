@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class MinHeap<T extends Comparable<T>>
 {
 
-    private ArrayList<T> list = new ArrayList<>();
+    private final ArrayList<T> list = new ArrayList<>();
     public void add(T item)
     {
         list.add(item);

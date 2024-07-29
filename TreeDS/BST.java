@@ -7,7 +7,7 @@ public class BST
         Node left;
         Node right;
     }
-    private Node root;
+    private final Node root;
     public BST(int [] inorder)
     {
         this.root = CreateTree(inorder,0,inorder.length-1);

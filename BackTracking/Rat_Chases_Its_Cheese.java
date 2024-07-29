@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Rat_Chases_Its_Cheese {
     static boolean f= false;
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
@@ -19,7 +19,7 @@ public class Rat_Chases_Its_Cheese {
         }
         int[][] ans = new int[n][m];
         HasPath(maze,0,0,ans);
-        if(f==false)
+        if(!f)
         {
             System.out.println("NO PATH FOUND");
         }

@@ -7,7 +7,7 @@ import java.util.Queue;
 
 public class Topological_Sort
 {
-    private HashMap<Integer, HashMap<Integer, Integer>> map = new HashMap<>();
+    private final HashMap<Integer, HashMap<Integer, Integer>> map = new HashMap<>();
 
     public Topological_Sort(int v)
     {

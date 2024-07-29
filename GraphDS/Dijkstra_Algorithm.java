@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Dijkstra_Algorithm
 {
-    private HashMap<Integer, HashMap<Integer, Integer>> map = new HashMap<>();
+    private final HashMap<Integer, HashMap<Integer, Integer>> map = new HashMap<>();
 
     public Dijkstra_Algorithm(int v) {
         for (int i = 1; i <= v; i++) {

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Heap_Copy
 {
-    private ArrayList<Integer> list = new ArrayList<>();
+    private final ArrayList<Integer> list = new ArrayList<>();
     public void add(int item)
     {
         list.add(item);

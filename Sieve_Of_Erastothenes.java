@@ -15,7 +15,7 @@ public class Sieve_Of_Erastothenes {
         arr[1] = true;
         for(int i=2;i<arr.length;i++)
         {
-            if(arr[i] == false)
+            if(!arr[i])
             {
                 for(int j=2;i*j<=n;j++)
                 {
@@ -28,7 +28,7 @@ public class Sieve_Of_Erastothenes {
         for(int i=0;i<arr.length;i++)
         {
 
-            if(arr[i] == false)
+            if(!arr[i])
             {
                 System.out.print(i+" ");
             }

@@ -4,7 +4,7 @@ import java.util.*;
 
 public class MST_0_1
 {
-    private HashMap<Integer, List<Integer>> map = new HashMap<>();
+    private final HashMap<Integer, List<Integer>> map = new HashMap<>();
 
     public MST_0_1(int v)
     {

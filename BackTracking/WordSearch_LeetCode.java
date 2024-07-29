@@ -14,7 +14,7 @@ public class WordSearch_LeetCode {
                 if(board[i][j] == word.charAt(0))
                 {
                     boolean res = WordSearch(board,i,j,word,0);
-                    if(res == true)
+                    if(res)
                     {
                         System.out.println(res);
                         return;
@@ -40,7 +40,7 @@ public class WordSearch_LeetCode {
         for(int i=0;i<c.length;i++)
         {
             boolean ans = WordSearch(board,cr+r[i],cc+c[i],word,idx+1);
-            if(ans == true)
+            if(ans)
             {
                 return ans;
             }
